@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "PLekarska.Infrastructure/1.0.0": {
+        "dependencies": {
+          "PLekarska.Core": "1.0.0"
+        },
+        "runtime": {
+          "PLekarska.Infrastructure.dll": {}
+        }
+      },
+      "PLekarska.Core/1.0.0": {
+        "runtime": {
+          "PLekarska.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PLekarska.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PLekarska.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

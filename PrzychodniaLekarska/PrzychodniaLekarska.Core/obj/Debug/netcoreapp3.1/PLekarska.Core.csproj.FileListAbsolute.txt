@@ -1,0 +1,8 @@
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\PrzychodniaLekarska\PrzychodniaLekarska.Core\bin\Debug\netcoreapp3.1\PLekarska.Core.deps.json
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\PrzychodniaLekarska\PrzychodniaLekarska.Core\bin\Debug\netcoreapp3.1\PLekarska.Core.dll
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\PrzychodniaLekarska\PrzychodniaLekarska.Core\bin\Debug\netcoreapp3.1\PLekarska.Core.pdb
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\PrzychodniaLekarska\PrzychodniaLekarska.Core\obj\Debug\netcoreapp3.1\PLekarska.Core.AssemblyInfoInputs.cache
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\PrzychodniaLekarska\PrzychodniaLekarska.Core\obj\Debug\netcoreapp3.1\PLekarska.Core.AssemblyInfo.cs
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\PrzychodniaLekarska\PrzychodniaLekarska.Core\obj\Debug\netcoreapp3.1\PLekarska.Core.csproj.CoreCompileInputs.cache
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\PrzychodniaLekarska\PrzychodniaLekarska.Core\obj\Debug\netcoreapp3.1\PLekarska.Core.dll
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\PrzychodniaLekarska\PrzychodniaLekarska.Core\obj\Debug\netcoreapp3.1\PLekarska.Core.pdb
