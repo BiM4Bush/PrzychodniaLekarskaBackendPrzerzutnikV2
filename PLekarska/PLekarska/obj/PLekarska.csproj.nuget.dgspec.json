@@ -1,0 +1,214 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\sebak\\Desktop\\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\\PrzychodniaLekarskaBackendPrzerzutnikV2\\PLekarska\\PLekarska\\PLekarska.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\sebak\\Desktop\\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\\PrzychodniaLekarskaBackendPrzerzutnikV2\\PLekarska\\PLekarska.Core\\PLekarska.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sebak\\Desktop\\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\\PrzychodniaLekarskaBackendPrzerzutnikV2\\PLekarska\\PLekarska.Core\\PLekarska.Core.csproj",
+        "projectName": "PLekarska.Core",
+        "projectPath": "C:\\Users\\sebak\\Desktop\\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\\PrzychodniaLekarskaBackendPrzerzutnikV2\\PLekarska\\PLekarska.Core\\PLekarska.Core.csproj",
+        "packagesPath": "C:\\Users\\sebak\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebak\\Desktop\\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\\PrzychodniaLekarskaBackendPrzerzutnikV2\\PLekarska\\PLekarska.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sebak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\sebak\\Desktop\\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\\PrzychodniaLekarskaBackendPrzerzutnikV2\\PLekarska\\PLekarska.Infrastructure\\PLekarska.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sebak\\Desktop\\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\\PrzychodniaLekarskaBackendPrzerzutnikV2\\PLekarska\\PLekarska.Infrastructure\\PLekarska.Infrastructure.csproj",
+        "projectName": "PLekarska.Infrastructure",
+        "projectPath": "C:\\Users\\sebak\\Desktop\\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\\PrzychodniaLekarskaBackendPrzerzutnikV2\\PLekarska\\PLekarska.Infrastructure\\PLekarska.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\sebak\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebak\\Desktop\\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\\PrzychodniaLekarskaBackendPrzerzutnikV2\\PLekarska\\PLekarska.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sebak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "netcoreapp5.0",
+            "projectReferences": {
+              "C:\\Users\\sebak\\Desktop\\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\\PrzychodniaLekarskaBackendPrzerzutnikV2\\PLekarska\\PLekarska.Core\\PLekarska.Core.csproj": {
+                "projectPath": "C:\\Users\\sebak\\Desktop\\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\\PrzychodniaLekarskaBackendPrzerzutnikV2\\PLekarska\\PLekarska.Core\\PLekarska.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "netcoreapp5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0-preview.1.21102.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0-preview.1.21102.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\sebak\\Desktop\\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\\PrzychodniaLekarskaBackendPrzerzutnikV2\\PLekarska\\PLekarska\\PLekarska.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sebak\\Desktop\\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\\PrzychodniaLekarskaBackendPrzerzutnikV2\\PLekarska\\PLekarska\\PLekarska.csproj",
+        "projectName": "PLekarska",
+        "projectPath": "C:\\Users\\sebak\\Desktop\\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\\PrzychodniaLekarskaBackendPrzerzutnikV2\\PLekarska\\PLekarska\\PLekarska.csproj",
+        "packagesPath": "C:\\Users\\sebak\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebak\\Desktop\\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\\PrzychodniaLekarskaBackendPrzerzutnikV2\\PLekarska\\PLekarska\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sebak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "netcoreapp5.0",
+            "projectReferences": {
+              "C:\\Users\\sebak\\Desktop\\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\\PrzychodniaLekarskaBackendPrzerzutnikV2\\PLekarska\\PLekarska.Core\\PLekarska.Core.csproj": {
+                "projectPath": "C:\\Users\\sebak\\Desktop\\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\\PrzychodniaLekarskaBackendPrzerzutnikV2\\PLekarska\\PLekarska.Core\\PLekarska.Core.csproj"
+              },
+              "C:\\Users\\sebak\\Desktop\\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\\PrzychodniaLekarskaBackendPrzerzutnikV2\\PLekarska\\PLekarska.Infrastructure\\PLekarska.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\sebak\\Desktop\\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\\PrzychodniaLekarskaBackendPrzerzutnikV2\\PLekarska\\PLekarska.Infrastructure\\PLekarska.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "netcoreapp5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0-preview.1.21102.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0-preview.1.21102.2, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

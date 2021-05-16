@@ -9,10 +9,12 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using PLekarska.Core;
 using PLekarska.Infrastructure;
+using PLekarska.Infrastructure.Persistance;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace PrzychodniaLekarska
 {
@@ -29,10 +31,18 @@ namespace PrzychodniaLekarska
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            //Di
             services.AddScoped(typeof(IUserService), typeof(UserService));
+
+            //Db
+            services.AddDbContext<UserContext>(
+               o => o.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            //Swagger
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Przychodnia Lekarska", Version = "v1" });
             });
         }
 
@@ -50,7 +60,7 @@ namespace PrzychodniaLekarska
 
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("v1/swagger.json", "My API V1");
+                c.SwaggerEndpoint("v1/swagger.json", "Przychodnia Lekarska");
             });
 
             app.UseRouting();
