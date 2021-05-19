@@ -8,11 +8,8 @@ namespace PLekarska.Core
 {
     public interface IUserService
     {
-        Task<IReadOnlyList<User>> Get();
-        Task<User> Get(Guid id);
-
-        Task<int> Add(User user);
-
-        Task<int> Delete(Guid id);
+        bool IsAnExistingUser(string userName);
+        bool IsValidUserCredentials(string userName, string password);
+        string GetUserRole(string userName);
     }
 }

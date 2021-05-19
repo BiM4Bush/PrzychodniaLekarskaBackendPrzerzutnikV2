@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLekarska", "PLekarska\PLekarska.csproj", "{FEAA5EE7-7905-4933-9053-607AA121170B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PLekarska", "PLekarska\PLekarska.csproj", "{FEAA5EE7-7905-4933-9053-607AA121170B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLekarska.Core", "PLekarska.Core\PLekarska.Core.csproj", "{C744FC19-1213-4065-ABAD-02E25FEDA6A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PLekarska.Core", "PLekarska.Core\PLekarska.Core.csproj", "{C744FC19-1213-4065-ABAD-02E25FEDA6A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLekarska.Infrastructure", "PLekarska.Infrastructure\PLekarska.Infrastructure.csproj", "{7FAECC1B-544D-4C74-A68C-0F9AFF224781}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PLekarska.Infrastructure", "PLekarska.Infrastructure\PLekarska.Infrastructure.csproj", "{7FAECC1B-544D-4C74-A68C-0F9AFF224781}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

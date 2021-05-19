@@ -9,4 +9,9 @@ namespace PLekarska.Core.Entities
         public string emailAdress { get; set; }
         public string password { get; set; }
     }
+    public static class UserRoles
+    {
+        public const string Admin = nameof(Admin);
+        public const string BasicUser = nameof(BasicUser);
+    }
 }

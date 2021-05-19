@@ -1,4 +1,5 @@
-﻿using PLekarska.Core;
+﻿using Microsoft.Extensions.Logging;
+using PLekarska.Core;
 using PLekarska.Core.Entities;
 using System;
 using System.Collections.Generic;
@@ -10,32 +11,56 @@ namespace PLekarska.Infrastructure.Services
 {
     public class UserService : IUserService
     {
-        private readonly IUserRepository _userRepository;
+        private readonly ILogger<UserService> _logger;
 
-        public UserService(IUserRepository userRepository)
+
+        private readonly IDictionary<string, string> _users = new Dictionary<string, string>
         {
-            _userRepository = userRepository;
+            { "test1", "password1" },
+            { "test2", "password2" },
+            { "admin", "securePassword" }
+        };
+        // inject your database here for user validation
+        public UserService(ILogger<UserService> logger)
+        {
+            _logger = logger;
         }
 
-        public async Task<IReadOnlyList<User>> Get()
+        public bool IsValidUserCredentials(string userName, string password)
         {
-            return await _userRepository.GetAsync();
+            _logger.LogInformation($"Validating user [{userName}]");
+            if (string.IsNullOrWhiteSpace(userName))
+            {
+                return false;
+            }
+
+            if (string.IsNullOrWhiteSpace(password))
+            {
+                return false;
+            }
+
+            return _users.TryGetValue(userName, out var p) && p == password;
         }
 
-        public async Task<User> Get(Guid id)
+        public bool IsAnExistingUser(string userName)
         {
-            return await _userRepository.GetAsync(id);
+            return _users.ContainsKey(userName);
         }
 
-        public async Task<int> Add(User user)
+        public string GetUserRole(string userName)
         {
-            return await _userRepository.AddAsync(user);
+            if (!IsAnExistingUser(userName))
+            {
+                return string.Empty;
+            }
 
-        }
-        public async Task<int> Delete(Guid id)
-        {
-            var user = await _userRepository.GetAsync(id);
-            return await _userRepository.DeleteAsync(user);
+            if (userName == "admin")
+            {
+                return UserRoles.Admin;
+            }
+
+            return UserRoles.BasicUser;
         }
     }
 }
+

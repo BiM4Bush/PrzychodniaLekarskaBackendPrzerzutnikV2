@@ -10,7 +10,7 @@ using PLekarska.Infrastructure.Persistance;
 namespace PLekarska.Infrastructure.Migrations
 {
     [DbContext(typeof(UserContext))]
-    [Migration("20210516193842_InitialCreate")]
+    [Migration("20210519145830_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

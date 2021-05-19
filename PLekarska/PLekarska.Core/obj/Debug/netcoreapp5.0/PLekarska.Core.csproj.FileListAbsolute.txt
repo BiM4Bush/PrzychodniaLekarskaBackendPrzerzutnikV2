@@ -1,0 +1,12 @@
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\PLekarska\PLekarska.Core\bin\Debug\netcoreapp5.0\PLekarska.Core.deps.json
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\PLekarska\PLekarska.Core\bin\Debug\netcoreapp5.0\PLekarska.Core.dll
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\PLekarska\PLekarska.Core\bin\Debug\netcoreapp5.0\ref\PLekarska.Core.dll
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\PLekarska\PLekarska.Core\bin\Debug\netcoreapp5.0\PLekarska.Core.pdb
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\PLekarska\PLekarska.Core\obj\Debug\netcoreapp5.0\PLekarska.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\PLekarska\PLekarska.Core\obj\Debug\netcoreapp5.0\PLekarska.Core.AssemblyInfoInputs.cache
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\PLekarska\PLekarska.Core\obj\Debug\netcoreapp5.0\PLekarska.Core.AssemblyInfo.cs
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\PLekarska\PLekarska.Core\obj\Debug\netcoreapp5.0\PLekarska.Core.csproj.CoreCompileInputs.cache
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\PLekarska\PLekarska.Core\obj\Debug\netcoreapp5.0\PLekarska.Core.dll
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\PLekarska\PLekarska.Core\obj\Debug\netcoreapp5.0\ref\PLekarska.Core.dll
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\PLekarska\PLekarska.Core\obj\Debug\netcoreapp5.0\PLekarska.Core.pdb
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\PLekarska\PLekarska.Core\obj\Debug\netcoreapp5.0\PLekarska.Core.csprojAssemblyReference.cache
