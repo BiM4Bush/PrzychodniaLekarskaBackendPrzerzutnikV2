@@ -35,7 +35,6 @@ C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\Przychod
 C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\WebAPI.runtimeconfig.dev.json
 C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\WebAPI.dll
 C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\WebAPI.pdb
-C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.csprojAssemblyReference.cache
 C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.AssemblyInfoInputs.cache
 C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.AssemblyInfo.cs
 C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.csproj.CoreCompileInputs.cache
@@ -45,3 +44,4 @@ C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\Przychod
 C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.dll
 C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.pdb
 C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.genruntimeconfig.cache
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.csprojAssemblyReference.cache

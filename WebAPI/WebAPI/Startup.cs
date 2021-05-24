@@ -15,6 +15,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using WebAPI.Models;
+using WebAPI.Repositories;
+using WebAPI.Services;
 
 namespace WebAPI
 {
@@ -38,9 +40,16 @@ namespace WebAPI
             services.AddDbContext<AuthenticationContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("IdentityConnection")));
 
+            services.AddDbContext<MedicalVisitContext>(o => 
+            o.UseSqlServer(Configuration.GetConnectionString("MedicalVisitConnection")));
+
             services.AddDefaultIdentity<ApplicationUser>()
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<AuthenticationContext>();
+
+            services.AddScoped(typeof(IMedicalVisitService), typeof(MedicalVisitService));
+            services.AddScoped(typeof(IMedicalVisitRepository), typeof(MedicalVisitRepository));
+            services.AddScoped(typeof(IMedicalVisitRepository), typeof(MedicalVisitRepository));
 
             services.Configure<IdentityOptions>(options =>
             {
@@ -108,7 +117,6 @@ namespace WebAPI
             builder.WithOrigins(Configuration["ApplicationSettings:Client_URL"].ToString())
             .AllowAnyHeader()
             .AllowAnyMethod()
-
             );
 
 
