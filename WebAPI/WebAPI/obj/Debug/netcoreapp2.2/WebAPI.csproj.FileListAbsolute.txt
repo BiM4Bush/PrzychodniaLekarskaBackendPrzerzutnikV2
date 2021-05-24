@@ -28,3 +28,20 @@ C:\Users\sebak\Desktop\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.RazorTargetA
 C:\Users\sebak\Desktop\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.dll
 C:\Users\sebak\Desktop\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.pdb
 C:\Users\sebak\Desktop\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.genruntimeconfig.cache
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\WebAPI.deps.json
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\WebAPI.runtimeconfig.json
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\WebAPI.runtimeconfig.dev.json
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\WebAPI.dll
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\WebAPI.pdb
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.csprojAssemblyReference.cache
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.AssemblyInfoInputs.cache
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.AssemblyInfo.cs
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.RazorAssemblyInfo.cache
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.RazorAssemblyInfo.cs
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.RazorTargetAssemblyInfo.cache
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.dll
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.pdb
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.genruntimeconfig.cache

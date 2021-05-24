@@ -34,7 +34,7 @@ namespace WebAPI.Controllers
         //POST : /api/ApplicationUser/Register
         public async Task<Object> PostApplicationUser(ApplicationUserModel model)
         {
-            model.Role = "Costumer";
+            model.Role = "Customer";
             var applicationUser = new ApplicationUser() {
                 UserName = model.UserName,
                 Email = model.Email,

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sebak\\Desktop\\WebAPI\\WebAPI\\WebAPI.csproj": {}
+    "C:\\Users\\sebak\\Desktop\\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\\PrzychodniaLekarskaBackendPrzerzutnikV2\\WebAPI\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sebak\\Desktop\\WebAPI\\WebAPI\\WebAPI.csproj": {
+    "C:\\Users\\sebak\\Desktop\\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\\PrzychodniaLekarskaBackendPrzerzutnikV2\\WebAPI\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sebak\\Desktop\\WebAPI\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\sebak\\Desktop\\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\\PrzychodniaLekarskaBackendPrzerzutnikV2\\WebAPI\\WebAPI\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "C:\\Users\\sebak\\Desktop\\WebAPI\\WebAPI\\WebAPI.csproj",
+        "projectPath": "C:\\Users\\sebak\\Desktop\\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\\PrzychodniaLekarskaBackendPrzerzutnikV2\\WebAPI\\WebAPI\\WebAPI.csproj",
         "packagesPath": "C:\\Users\\sebak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sebak\\Desktop\\WebAPI\\WebAPI\\obj\\",
+        "outputPath": "C:\\Users\\sebak\\Desktop\\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\\PrzychodniaLekarskaBackendPrzerzutnikV2\\WebAPI\\WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

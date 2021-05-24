@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5uAuJiva+NC2qgQvvIngEj4K5nhuQo2I7GFAI9dM2T8r7Lef3jB8/GXNtPX+t0ndG7czgfYdHgbZmiF5sWkHGw==",
+  "dgSpecHash": "nS5Tz5YV/+6kz1TeJ3s6YNcqO50mmddHuHvOuClw47XMTvhmPnJK8aRUDxgm1/29oyJzpBoDmz+Z/7kVx37B4A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sebak\\Desktop\\WebAPI\\WebAPI\\WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\sebak\\Desktop\\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\\PrzychodniaLekarskaBackendPrzerzutnikV2\\WebAPI\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sebak\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\sebak\\.nuget\\packages\\microsoft.aspnetcore\\2.2.0\\microsoft.aspnetcore.2.2.0.nupkg.sha512",
