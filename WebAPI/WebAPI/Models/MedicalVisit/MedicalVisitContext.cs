@@ -9,7 +9,7 @@ namespace WebAPI.Models
     public class MedicalVisitContext : DbContext
     {
         public DbSet<MedicalVisitModel> MedicalVisits { get; set; }
-        public MedicalVisitContext(DbContextOptions options) : base(options)
+        public MedicalVisitContext(DbContextOptions<MedicalVisitContext> options) : base(options)
         {
 
         }

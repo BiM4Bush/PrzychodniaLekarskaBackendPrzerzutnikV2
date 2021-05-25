@@ -15,8 +15,11 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using WebAPI.Models;
+using WebAPI.Models.Doctor;
 using WebAPI.Repositories;
+using WebAPI.Repositories.Doctor;
 using WebAPI.Services;
+using WebAPI.Services.Doctor;
 
 namespace WebAPI
 {
@@ -43,13 +46,18 @@ namespace WebAPI
             services.AddDbContext<MedicalVisitContext>(o => 
             o.UseSqlServer(Configuration.GetConnectionString("MedicalVisitConnection")));
 
+            services.AddDbContext<DoctorContext>(o =>
+            o.UseSqlServer(Configuration.GetConnectionString("DoctorConnection")));
+
             services.AddDefaultIdentity<ApplicationUser>()
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<AuthenticationContext>();
 
             services.AddScoped(typeof(IMedicalVisitService), typeof(MedicalVisitService));
             services.AddScoped(typeof(IMedicalVisitRepository), typeof(MedicalVisitRepository));
-            services.AddScoped(typeof(IMedicalVisitRepository), typeof(MedicalVisitRepository));
+
+            services.AddScoped(typeof(IDoctorService), typeof(DoctorService));
+            services.AddScoped(typeof(IDoctorRepository), typeof(DoctorRepository));
 
             services.Configure<IdentityOptions>(options =>
             {
