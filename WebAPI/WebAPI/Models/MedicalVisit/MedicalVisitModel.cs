@@ -12,6 +12,7 @@ namespace WebAPI.Models
         public string Surname { get; set; }
         public int PhoneNumber { get; set; }
         public DateTime Date { get; set; }
+        public string Time { get; set; }
         public DoctorModel Doctor { get; set; }
         public string Reason { get; set; }
         public bool Private { get; set; }

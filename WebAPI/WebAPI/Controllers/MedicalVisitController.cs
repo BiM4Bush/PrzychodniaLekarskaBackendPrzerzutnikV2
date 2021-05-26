@@ -45,6 +45,7 @@ namespace WebAPI.Controllers
                 Surname = visit.Surname,
                 PhoneNumber = visit.PhoneNumber,
                 Date = visit.Date,
+                Time = visit.Time,
                 Doctor = visit.Doctor,
                 Private = visit.Private
             };
