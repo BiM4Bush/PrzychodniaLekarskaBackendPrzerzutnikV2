@@ -16,10 +16,13 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using WebAPI.Models;
 using WebAPI.Models.Doctor;
+using WebAPI.Models.PatientProfile;
 using WebAPI.Repositories;
 using WebAPI.Repositories.Doctor;
+using WebAPI.Repositories.PatientProfile;
 using WebAPI.Services;
 using WebAPI.Services.Doctor;
+using WebAPI.Services.PatientProfile;
 
 namespace WebAPI
 {
@@ -38,8 +41,9 @@ namespace WebAPI
             services.Configure<ApplicationSettings>(Configuration.GetSection("ApplicationSettings"));
 
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2); 
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+            //DB
             services.AddDbContext<AuthenticationContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("IdentityConnection")));
 
@@ -49,16 +53,37 @@ namespace WebAPI
             services.AddDbContext<DoctorContext>(o =>
             o.UseSqlServer(Configuration.GetConnectionString("DoctorConnection")));
 
+            services.AddDbContext<MedicamentContext>(o =>
+            o.UseSqlServer(Configuration.GetConnectionString("MedicamentConnection")));
+
+            services.AddDbContext<DiseaseContext>(o =>
+            o.UseSqlServer(Configuration.GetConnectionString("DiseaseConnection")));
+
+            services.AddDbContext<PatientContext>(o =>
+            o.UseSqlServer(Configuration.GetConnectionString("PatientProfileConnection")));
+
             services.AddDefaultIdentity<ApplicationUser>()
                 .AddRoles<IdentityRole>()
-                .AddEntityFrameworkStores<AuthenticationContext>();
+                .AddEntityFrameworkStores<AuthenticationContext>(); 
 
+            //Di
             services.AddScoped(typeof(IMedicalVisitService), typeof(MedicalVisitService));
             services.AddScoped(typeof(IMedicalVisitRepository), typeof(MedicalVisitRepository));
 
             services.AddScoped(typeof(IDoctorService), typeof(DoctorService));
             services.AddScoped(typeof(IDoctorRepository), typeof(DoctorRepository));
 
+            services.AddScoped(typeof(IMedicamentService), typeof(MedicamentService));
+            services.AddScoped(typeof(IMedicamentRepository), typeof(MedicamentRepository));
+
+            services.AddScoped(typeof(IDiseaseService), typeof(DiseaseService));
+            services.AddScoped(typeof(IDiseaseRepository), typeof(DiseaseRepository));
+
+            services.AddScoped(typeof(IPatientService), typeof(PatientService));
+            services.AddScoped(typeof(IPatientRepository), typeof(PatientRepository));
+
+
+            //Security
             services.Configure<IdentityOptions>(options =>
             {
                 options.Password.RequireDigit = false;
