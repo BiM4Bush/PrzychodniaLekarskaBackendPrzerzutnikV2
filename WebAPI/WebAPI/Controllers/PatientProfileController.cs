@@ -43,6 +43,8 @@ namespace WebAPI.Controllers
                 Name = patient.Name,
                 Surname = patient.Surname,
                 Gender = patient.Gender,
+                telNumber = patient.telNumber,
+                birthdayDate = patient.birthdayDate,
                 Adress = patient.Adress,
                 PESEL = patient.PESEL
             };
