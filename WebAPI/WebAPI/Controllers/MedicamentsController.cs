@@ -59,8 +59,17 @@ namespace WebAPI.Controllers
 
         // PUT api/<MedicamentsController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] Medicament medicament)
+        public async Task<OkObjectResult> Update(Guid id, [FromBody] Medicament medicament)
         {
+            var data = await _medicamentService.Get(id);
+
+            if (data != null)
+            {
+                data.Name = medicament.Name;
+                data.Description = medicament.Description;
+            }
+            var context = await _medicamentService.Update(data);
+            return Ok(context);
         }
 
         // DELETE api/<MedicamentsController>/5

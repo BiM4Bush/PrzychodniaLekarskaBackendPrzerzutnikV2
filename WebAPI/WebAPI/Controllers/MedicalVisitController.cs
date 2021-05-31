@@ -47,6 +47,7 @@ namespace WebAPI.Controllers
                 Date = visit.Date,
                 Time = visit.Time,
                 Doctor = visit.Doctor,
+                Reason = visit.Reason,
                 Private = visit.Private
             };
 
@@ -63,8 +64,23 @@ namespace WebAPI.Controllers
 
         // PUT api/<MedicalVisitController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<OkObjectResult> Update(Guid id, [FromBody] MedicalVisitModel visit)
         {
+            var data = await _medicalVisitService.Get(id);
+
+            if (data != null)
+            {
+                data.Name = visit.Name;
+                data.Surname = visit.Surname;
+                data.PhoneNumber = visit.PhoneNumber;
+                data.Date = visit.Date;
+                data.Time = visit.Time;
+                data.Doctor = visit.Doctor;
+                data.Reason = visit.Reason;
+                data.Private = visit.Private;
+            }
+            var context = await _medicalVisitService.Update(data);
+            return Ok(context);
         }
 
         // DELETE api/<MedicalVisitController>/5

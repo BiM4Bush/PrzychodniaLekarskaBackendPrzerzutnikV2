@@ -35,5 +35,11 @@ namespace WebAPI.Repositories
         {
             return await DbContext.Set<MedicalVisitModel>().ToListAsync();
         }
+
+        public async Task<int> UpdateAsync(MedicalVisitModel entity)
+        {
+            DbContext.Set<MedicalVisitModel>().Update(entity);
+            return await DbContext.SaveChangesAsync();
+        }
     }
 }

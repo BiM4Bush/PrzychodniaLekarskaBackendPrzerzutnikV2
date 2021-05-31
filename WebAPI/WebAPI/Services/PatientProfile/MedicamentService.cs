@@ -35,5 +35,10 @@ namespace WebAPI.Services.PatientProfile
         {
             return await _medicamentRepository.GetAsync(id);
         }
+
+        public async Task<int> Update(Medicament medicament)
+        {
+            return await _medicamentRepository.UpdateAsync(medicament);
+        }
     }
 }

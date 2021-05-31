@@ -14,5 +14,6 @@ namespace WebAPI.Services.PatientProfile
         Task<int> Add(Patient patient);
 
         Task<int> Delete(Guid id);
+        Task<int> Update(Patient patient);
     }
 }

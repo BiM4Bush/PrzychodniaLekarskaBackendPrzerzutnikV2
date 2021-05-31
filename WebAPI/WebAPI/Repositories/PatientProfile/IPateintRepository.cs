@@ -12,5 +12,6 @@ namespace WebAPI.Repositories.PatientProfile
         Task<IReadOnlyList<Patient>> GetAsync();
         Task<int> AddAsync(Patient entity);
         Task<int> DeleteAsync(Patient entity);
+        Task<int> UpdateAsync(Patient entity);
     }
 }

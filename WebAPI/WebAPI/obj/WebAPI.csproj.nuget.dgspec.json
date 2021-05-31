@@ -70,6 +70,10 @@
               "version": "[2.2.0, )",
               "autoReferenced": true
             },
+            "Microsoft.OData.Edm": {
+              "target": "Package",
+              "version": "[7.9.0, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[2.2.0, )"

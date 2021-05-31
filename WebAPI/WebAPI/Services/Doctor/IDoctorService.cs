@@ -14,5 +14,6 @@ namespace WebAPI.Services.Doctor
         Task<int> Add(DoctorModel doctor);
 
         Task<int> Delete(Guid id);
+        Task<int> Update(DoctorModel doctor);
     }
 }

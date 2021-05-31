@@ -12,5 +12,6 @@ namespace WebAPI.Repositories
         Task<IReadOnlyList<MedicalVisitModel>> GetAsync();
         Task<int> AddAsync(MedicalVisitModel entity);
         Task<int> DeleteAsync(MedicalVisitModel entity);
+        Task<int> UpdateAsync(MedicalVisitModel entity);
     }
 }

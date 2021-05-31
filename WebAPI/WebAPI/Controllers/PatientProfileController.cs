@@ -62,8 +62,22 @@ namespace WebAPI.Controllers
 
         // PUT api/<PatientProfileController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<OkObjectResult> PutAsync([FromRoute]Guid id, [FromBody] Patient patient)
         {
+            var data = await _patientService.Get(id);
+
+            if ( data != null)
+            {
+                data.Name = patient.Name;
+                data.Surname = patient.Surname;
+                data.Gender = patient.Gender;
+                data.telNumber = patient.telNumber;
+                data.birthdayDate = patient.birthdayDate;
+                data.Adress = patient.Adress;
+                data.PESEL = patient.PESEL;
+            }
+            var context = await _patientService.Update(data);
+            return Ok(context);
         }
 
         // DELETE api/<PatientProfileController>/5

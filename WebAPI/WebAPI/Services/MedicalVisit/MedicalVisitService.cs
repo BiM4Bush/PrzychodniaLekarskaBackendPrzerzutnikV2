@@ -36,5 +36,10 @@ namespace WebAPI.Services
         {
             return await _medicalVisitRepository.GetAsync(id);
         }
+
+        public async Task<int> Update(MedicalVisitModel visit)
+        {
+            return await _medicalVisitRepository.UpdateAsync(visit);
+        }
     }
 }

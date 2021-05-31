@@ -38,5 +38,11 @@ namespace WebAPI.Repositories.Doctor
         {
             return await DbContext.Set<DoctorModel>().ToListAsync();
         }
+
+        public async Task<int> UpdateAsync(DoctorModel entity)
+        {
+            DbContext.Set<DoctorModel>().Update(entity);
+            return await DbContext.SaveChangesAsync();
+        }
     }
 }
