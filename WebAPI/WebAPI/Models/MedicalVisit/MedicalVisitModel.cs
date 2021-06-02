@@ -14,8 +14,8 @@ namespace WebAPI.Models
         public int PhoneNumber { get; set; }
         public string Date { get; set; }
         public string Time { get; set; }
-        public DoctorModel Doctor { get; set; }
+        public Guid DoctorId { get; set; }
         public string Reason { get; set; }
-        public bool Private { get; set; }
+        public bool Confirmed { get; set; }
     }
 }

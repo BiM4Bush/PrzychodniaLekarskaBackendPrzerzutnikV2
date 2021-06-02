@@ -46,9 +46,8 @@ namespace WebAPI.Controllers
                 PhoneNumber = visit.PhoneNumber,
                 Date = visit.Date,
                 Time = visit.Time,
-                Doctor = visit.Doctor,
+                DoctorId = visit.DoctorId,
                 Reason = visit.Reason,
-                Private = visit.Private
             };
 
             try
@@ -75,9 +74,9 @@ namespace WebAPI.Controllers
                 data.PhoneNumber = visit.PhoneNumber;
                 data.Date = visit.Date;
                 data.Time = visit.Time;
-                data.Doctor = visit.Doctor;
+                data.DoctorId = visit.DoctorId;
                 data.Reason = visit.Reason;
-                data.Private = visit.Private;
+                data.Confirmed = visit.Confirmed;
             }
             var context = await _medicalVisitService.Update(data);
             return Ok(context);

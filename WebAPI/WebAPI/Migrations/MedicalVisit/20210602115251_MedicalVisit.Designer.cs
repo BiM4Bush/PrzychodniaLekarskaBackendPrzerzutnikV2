@@ -10,7 +10,7 @@ using WebAPI.Models;
 namespace WebAPI.Migrations.MedicalVisit
 {
     [DbContext(typeof(MedicalVisitContext))]
-    [Migration("20210526154002_MedicalVisit")]
+    [Migration("20210602115251_MedicalVisit")]
     partial class MedicalVisit
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -21,30 +21,14 @@ namespace WebAPI.Migrations.MedicalVisit
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("WebAPI.Models.DoctorModel", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("MedicalSpecialization");
-
-                    b.Property<string>("Name");
-
-                    b.Property<string>("Surname");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("DoctorModel");
-                });
-
             modelBuilder.Entity("WebAPI.Models.MedicalVisitModel", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<DateTime>("Date");
+                    b.Property<string>("Date");
 
-                    b.Property<Guid?>("DoctorId");
+                    b.Property<Guid>("DoctorId");
 
                     b.Property<string>("Name");
 
@@ -60,16 +44,7 @@ namespace WebAPI.Migrations.MedicalVisit
 
                     b.HasKey("Id");
 
-                    b.HasIndex("DoctorId");
-
                     b.ToTable("MedicalVisits");
-                });
-
-            modelBuilder.Entity("WebAPI.Models.MedicalVisitModel", b =>
-                {
-                    b.HasOne("WebAPI.Models.DoctorModel", "Doctor")
-                        .WithMany()
-                        .HasForeignKey("DoctorId");
                 });
 #pragma warning restore 612, 618
         }

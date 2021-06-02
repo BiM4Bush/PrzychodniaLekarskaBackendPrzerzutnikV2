@@ -19,36 +19,20 @@ namespace WebAPI.Migrations.MedicalVisit
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("WebAPI.Models.DoctorModel", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("MedicalSpecialization");
-
-                    b.Property<string>("Name");
-
-                    b.Property<string>("Surname");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("DoctorModel");
-                });
-
             modelBuilder.Entity("WebAPI.Models.MedicalVisitModel", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<bool>("Confirmed");
+
                     b.Property<string>("Date");
 
-                    b.Property<Guid?>("DoctorId");
+                    b.Property<Guid>("DoctorId");
 
                     b.Property<string>("Name");
 
                     b.Property<int>("PhoneNumber");
-
-                    b.Property<bool>("Private");
 
                     b.Property<string>("Reason");
 
@@ -58,16 +42,7 @@ namespace WebAPI.Migrations.MedicalVisit
 
                     b.HasKey("Id");
 
-                    b.HasIndex("DoctorId");
-
                     b.ToTable("MedicalVisits");
-                });
-
-            modelBuilder.Entity("WebAPI.Models.MedicalVisitModel", b =>
-                {
-                    b.HasOne("WebAPI.Models.DoctorModel", "Doctor")
-                        .WithMany()
-                        .HasForeignKey("DoctorId");
                 });
 #pragma warning restore 612, 618
         }

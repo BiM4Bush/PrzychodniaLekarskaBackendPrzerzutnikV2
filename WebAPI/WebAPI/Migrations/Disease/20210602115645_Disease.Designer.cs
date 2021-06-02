@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebAPI.Models.PatientProfile;
 
-namespace WebAPI.Migrations.Medicament
+namespace WebAPI.Migrations.Disease
 {
-    [DbContext(typeof(MedicamentContext))]
-    [Migration("20210526172941_Medicaments")]
-    partial class Medicaments
+    [DbContext(typeof(DiseaseContext))]
+    [Migration("20210602115645_Disease")]
+    partial class Disease
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -21,18 +21,20 @@ namespace WebAPI.Migrations.Medicament
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("WebAPI.Models.PatientProfile.Medicament", b =>
+            modelBuilder.Entity("WebAPI.Models.PatientProfile.Disease", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Description");
+                    b.Property<string>("Cure");
 
                     b.Property<string>("Name");
 
+                    b.Property<string>("Symptoms");
+
                     b.HasKey("Id");
 
-                    b.ToTable("Medicaments");
+                    b.ToTable("Diseases");
                 });
 #pragma warning restore 612, 618
         }

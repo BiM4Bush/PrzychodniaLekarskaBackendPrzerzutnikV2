@@ -10,7 +10,7 @@ using WebAPI.Models.PatientProfile;
 namespace WebAPI.Migrations.Patient
 {
     [DbContext(typeof(PatientContext))]
-    [Migration("20210526185506_PatientProfile")]
+    [Migration("20210602115724_PatientProfile")]
     partial class PatientProfile
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -35,6 +35,10 @@ namespace WebAPI.Migrations.Patient
                     b.Property<string>("PESEL");
 
                     b.Property<string>("Surname");
+
+                    b.Property<string>("birthdayDate");
+
+                    b.Property<int>("telNumber");
 
                     b.HasKey("Id");
 
