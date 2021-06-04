@@ -17,5 +17,7 @@ namespace WebAPI.Models
         public Guid DoctorId { get; set; }
         public string Reason { get; set; }
         public bool Confirmed { get; set; }
+        public string DoctorRecommendation { get; set; }
+
     }
 }

@@ -77,6 +77,7 @@ namespace WebAPI.Controllers
                 data.DoctorId = visit.DoctorId;
                 data.Reason = visit.Reason;
                 data.Confirmed = visit.Confirmed;
+                data.DoctorRecommendation = visit.DoctorRecommendation;
             }
             var context = await _medicalVisitService.Update(data);
             return Ok(context);

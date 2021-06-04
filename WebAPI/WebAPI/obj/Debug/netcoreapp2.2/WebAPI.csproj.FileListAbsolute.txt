@@ -44,3 +44,4 @@ C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\Przychod
 C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.dll
 C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.pdb
 C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.genruntimeconfig.cache
+C:\Users\sebak\Desktop\Fakultet Billenium - Projekt PRZYCHODNIA KORTOWO\PrzychodniaLekarskaBackendPrzerzutnikV2\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.csprojAssemblyReference.cache
