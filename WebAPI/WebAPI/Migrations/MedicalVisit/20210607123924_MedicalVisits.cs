@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace WebAPI.Migrations.MedicalVisit
 {
-    public partial class MedicalVisit : Migration
+    public partial class MedicalVisits : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,6 +12,7 @@ namespace WebAPI.Migrations.MedicalVisit
                 columns: table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
+                    UserId = table.Column<Guid>(nullable: false),
                     Name = table.Column<string>(nullable: true),
                     Surname = table.Column<string>(nullable: true),
                     PhoneNumber = table.Column<int>(nullable: false),
@@ -19,7 +20,8 @@ namespace WebAPI.Migrations.MedicalVisit
                     Time = table.Column<string>(nullable: true),
                     DoctorId = table.Column<Guid>(nullable: false),
                     Reason = table.Column<string>(nullable: true),
-                    Private = table.Column<bool>(nullable: false)
+                    Confirmed = table.Column<bool>(nullable: false),
+                    DoctorRecommendation = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

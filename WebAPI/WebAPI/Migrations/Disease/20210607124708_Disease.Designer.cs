@@ -5,13 +5,13 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using WebAPI.Models;
+using WebAPI.Models.PatientProfile;
 
-namespace WebAPI.Migrations.MedicalVisit
+namespace WebAPI.Migrations.Disease
 {
-    [DbContext(typeof(MedicalVisitContext))]
-    [Migration("20210602123451_MVUpdate1")]
-    partial class MVUpdate1
+    [DbContext(typeof(DiseaseContext))]
+    [Migration("20210607124708_Disease")]
+    partial class Disease
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -21,30 +21,20 @@ namespace WebAPI.Migrations.MedicalVisit
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("WebAPI.Models.MedicalVisitModel", b =>
+            modelBuilder.Entity("WebAPI.Models.PatientProfile.Disease", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<bool>("Confirmed");
-
-                    b.Property<string>("Date");
-
-                    b.Property<Guid>("DoctorId");
+                    b.Property<string>("Cure");
 
                     b.Property<string>("Name");
 
-                    b.Property<int>("PhoneNumber");
-
-                    b.Property<string>("Reason");
-
-                    b.Property<string>("Surname");
-
-                    b.Property<string>("Time");
+                    b.Property<string>("Symptoms");
 
                     b.HasKey("Id");
 
-                    b.ToTable("MedicalVisits");
+                    b.ToTable("Diseases");
                 });
 #pragma warning restore 612, 618
         }

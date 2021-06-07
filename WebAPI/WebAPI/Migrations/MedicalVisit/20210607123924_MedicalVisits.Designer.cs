@@ -10,8 +10,8 @@ using WebAPI.Models;
 namespace WebAPI.Migrations.MedicalVisit
 {
     [DbContext(typeof(MedicalVisitContext))]
-    [Migration("20210602115251_MedicalVisit")]
-    partial class MedicalVisit
+    [Migration("20210607123924_MedicalVisits")]
+    partial class MedicalVisits
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -26,21 +26,25 @@ namespace WebAPI.Migrations.MedicalVisit
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<bool>("Confirmed");
+
                     b.Property<string>("Date");
 
                     b.Property<Guid>("DoctorId");
 
+                    b.Property<string>("DoctorRecommendation");
+
                     b.Property<string>("Name");
 
                     b.Property<int>("PhoneNumber");
-
-                    b.Property<bool>("Private");
 
                     b.Property<string>("Reason");
 
                     b.Property<string>("Surname");
 
                     b.Property<string>("Time");
+
+                    b.Property<Guid>("UserId");
 
                     b.HasKey("Id");
 

@@ -34,6 +34,8 @@ namespace WebAPI.Migrations.Patient
 
                     b.Property<string>("Surname");
 
+                    b.Property<string>("UserId");
+
                     b.Property<string>("birthdayDate");
 
                     b.Property<int>("telNumber");

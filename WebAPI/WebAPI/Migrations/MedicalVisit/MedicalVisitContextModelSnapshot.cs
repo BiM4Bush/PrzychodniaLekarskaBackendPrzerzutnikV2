@@ -42,6 +42,8 @@ namespace WebAPI.Migrations.MedicalVisit
 
                     b.Property<string>("Time");
 
+                    b.Property<string>("UserId");
+
                     b.HasKey("Id");
 
                     b.ToTable("MedicalVisits");
