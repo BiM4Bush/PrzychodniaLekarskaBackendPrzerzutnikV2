@@ -43,6 +43,7 @@ namespace WebAPI.Controllers
             {
                 Name = doctor.Name,
                 Surname = doctor.Surname,
+                PhoneNumber = doctor.PhoneNumber,
                 MedicalSpecialization = doctor.MedicalSpecialization
             };
 
@@ -67,6 +68,7 @@ namespace WebAPI.Controllers
             {
                 data.Name = doctor.Name;
                 data.Surname = doctor.Surname;
+                data.PhoneNumber = doctor.PhoneNumber;
                 data.MedicalSpecialization = doctor.MedicalSpecialization;
             }
             var context = await _doctorService.Update(data);
