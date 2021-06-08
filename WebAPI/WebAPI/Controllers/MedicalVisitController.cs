@@ -43,6 +43,7 @@ namespace WebAPI.Controllers
             {
                 Name = visit.Name,
                 Surname = visit.Surname,
+                UserId = visit.UserId,
                 PhoneNumber = visit.PhoneNumber,
                 Date = visit.Date,
                 Time = visit.Time,
@@ -71,6 +72,7 @@ namespace WebAPI.Controllers
             {
                 data.Name = visit.Name;
                 data.Surname = visit.Surname;
+                data.UserId = visit.UserId;
                 data.PhoneNumber = visit.PhoneNumber;
                 data.Date = visit.Date;
                 data.Time = visit.Time;

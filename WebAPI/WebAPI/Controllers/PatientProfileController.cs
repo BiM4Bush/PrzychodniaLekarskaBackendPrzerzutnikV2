@@ -42,6 +42,7 @@ namespace WebAPI.Controllers
             {
                 Name = patient.Name,
                 Surname = patient.Surname,
+                UserId = patient.UserId,
                 Gender = patient.Gender,
                 telNumber = patient.telNumber,
                 birthdayDate = patient.birthdayDate,
@@ -70,6 +71,7 @@ namespace WebAPI.Controllers
             {
                 data.Name = patient.Name;
                 data.Surname = patient.Surname;
+                data.UserId = patient.UserId;
                 data.Gender = patient.Gender;
                 data.telNumber = patient.telNumber;
                 data.birthdayDate = patient.birthdayDate;
