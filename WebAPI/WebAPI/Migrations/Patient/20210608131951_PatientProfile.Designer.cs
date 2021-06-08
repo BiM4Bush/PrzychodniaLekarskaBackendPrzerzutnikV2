@@ -5,13 +5,13 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using WebAPI.Models.Doctor;
+using WebAPI.Models.PatientProfile;
 
-namespace WebAPI.Migrations.Doctor
+namespace WebAPI.Migrations.Patient
 {
-    [DbContext(typeof(DoctorContext))]
-    [Migration("20210607174729_UpdateDoctor")]
-    partial class UpdateDoctor
+    [DbContext(typeof(PatientContext))]
+    [Migration("20210608131951_PatientProfile")]
+    partial class PatientProfile
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -21,22 +21,30 @@ namespace WebAPI.Migrations.Doctor
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("WebAPI.Models.DoctorModel", b =>
+            modelBuilder.Entity("WebAPI.Models.PatientProfile.Patient", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("MedicalSpecialization");
+                    b.Property<string>("Adress");
+
+                    b.Property<string>("Gender");
 
                     b.Property<string>("Name");
 
-                    b.Property<string>("PhoneNumber");
+                    b.Property<string>("PESEL");
 
                     b.Property<string>("Surname");
 
+                    b.Property<string>("UserId");
+
+                    b.Property<string>("birthdayDate");
+
+                    b.Property<int>("telNumber");
+
                     b.HasKey("Id");
 
-                    b.ToTable("Doctors");
+                    b.ToTable("Patients");
                 });
 #pragma warning restore 612, 618
         }

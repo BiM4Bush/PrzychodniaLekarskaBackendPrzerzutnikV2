@@ -42,7 +42,7 @@ namespace WebAPI.Migrations.MedicalVisit
 
                     b.Property<string>("Time");
 
-                    b.Property<Guid>("UserId");
+                    b.Property<string>("UserId");
 
                     b.HasKey("Id");
 

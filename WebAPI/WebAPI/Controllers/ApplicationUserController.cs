@@ -35,7 +35,8 @@ namespace WebAPI.Controllers
         public async Task<Object> PostApplicationUser(ApplicationUserModel model)
         {
             model.Role = "Customer";
-            var applicationUser = new ApplicationUser() {
+            var applicationUser = new ApplicationUser()
+            {
                 UserName = model.UserName,
                 Email = model.Email,
                 FullName = model.FullName

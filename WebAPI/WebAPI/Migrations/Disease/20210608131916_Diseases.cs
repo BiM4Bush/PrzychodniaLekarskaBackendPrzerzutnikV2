@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace WebAPI.Migrations.Disease
 {
-    public partial class Disease : Migration
+    public partial class Diseases : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

@@ -34,7 +34,7 @@ namespace WebAPI.Migrations.Patient
 
                     b.Property<string>("Surname");
 
-                    b.Property<Guid>("UserId");
+                    b.Property<string>("UserId");
 
                     b.Property<string>("birthdayDate");
 

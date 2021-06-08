@@ -9,7 +9,7 @@ namespace WebAPI.Models
     public class MedicalVisitModel
     {
         public Guid Id { get; set; }
-        public Guid UserId { get; set; }
+        public string UserId { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public int PhoneNumber { get; set; }
