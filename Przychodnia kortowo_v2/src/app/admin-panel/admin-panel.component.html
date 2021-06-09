@@ -1,0 +1,21 @@
+<p>
+    <mat-toolbar color="primary">
+      <span>Przychodnia Kortowo</span>
+      <div class= "menu_przyciski" fxLayoutGap="20px">
+        <button mat-raised-button color="warn" routerLink="/adminpanel">Panel Lekarza</button>
+        <button mat-raised-button color="accent" (click)="onLogout()">Wyloguj</button>
+      </div>
+    </mat-toolbar>
+  </p>
+  <div class = "Filtr">
+</div>
+<mat-tab-group class="nawigacja">
+    <mat-tab label="Recepcja"> 
+        <app-reception-form></app-reception-form>
+    </mat-tab>
+   
+    <mat-tab label="Lekarze">     
+          <app-reception-gastrolog></app-reception-gastrolog>
+  </mat-tab>
+  
+  </mat-tab-group>

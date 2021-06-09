@@ -1,0 +1,45 @@
+
+
+<mat-card class = "rownaj">
+    <div class= "pop" *ngIf="alert" >
+        <mat-card>
+                <strong><h2> Udało się!</h2> </strong>  <h3>  Zaktualizowano wizyte!</h3>
+                <button  mat-raised-button color="warn" (click)=" closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    Ok
+                </button>
+        </mat-card>
+        </div>
+        
+<form [formGroup]="Editvisit" (ngSubmit)="collection()">
+
+    <div class="formVisit" fxLayoutGap="10px">
+
+        <h3>Aktualizacja</h3>
+        <mat-form-field appearance="fill">
+            <mat-label>Imię</mat-label>
+            <input matInput formControlName="name">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Nazwisko</mat-label>
+            <input matInput formControlName="surname">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Godzina</mat-label>
+            <input matInput formControlName="time">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Rekomendacja</mat-label>
+            <input matInput formControlName="doctorRecommendation">
+        </mat-form-field>
+
+        <div class="sub" fxLayoutGap="10px">
+            <button mat-raised-button color="accent" type="submit">Wyślij</button>
+            <button mat-raised-button color="accent" (click)="back()">cofnij</button>
+        </div>
+    </div>
+</form>
+
+</mat-card>

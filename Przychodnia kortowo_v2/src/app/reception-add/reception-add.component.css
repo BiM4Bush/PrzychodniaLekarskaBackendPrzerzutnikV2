@@ -1,0 +1,29 @@
+form
+{
+text-align: center;
+}
+h3
+{
+text-align: center;
+margin-bottom: auto;
+
+}
+
+table {
+    width: 100%;
+  }
+
+.formVisit
+{
+
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    flex-direction: row;
+    align-items: center;
+	
+}
+.pop
+{
+  text-align: center;
+}

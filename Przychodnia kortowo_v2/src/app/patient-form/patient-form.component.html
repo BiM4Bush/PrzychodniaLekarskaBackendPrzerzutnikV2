@@ -1,0 +1,88 @@
+<p>
+    <mat-toolbar color="primary">
+        <span>Przychodnia Kortowo</span>
+        <div class= "menu_przyciski" fxLayoutGap="10px">
+        <button mat-raised-button color="warn" routerLink="/home">Profil</button>
+        <button mat-raised-button color="warn" routerLink="/doctorinfo">Kontakt</button>
+        <button mat-raised-button color="accent" (click)="onLogout()">Wyloguj</button>
+        </div>
+    </mat-toolbar>
+</p>
+
+
+<div class="nawigacja">
+
+    <form [formGroup]="VisitSend" #formDirective="ngForm" (ngSubmit)="callAPI()" class="fix">
+        
+            <h3>Formularz Wizyty</h3>
+            <mat-form-field appearance="fill">
+                <mat-label>Imię</mat-label>
+                <input matInput formControlName="name">
+                <label class="text-danger" *ngIf="VisitSend.get('name')?.touched && VisitSend.get('name')?.errors?.required">Pole wymagane</label>
+            </mat-form-field>
+            <br>
+    
+            <mat-form-field appearance="fill">
+                <mat-label>Nazwisko</mat-label>
+                <input matInput formControlName="surname">
+                <label class="text-danger" *ngIf="VisitSend.get('surname')?.touched && VisitSend.get('surname')?.errors?.required">Pole wymagane</label>
+            </mat-form-field>
+            <br>
+    
+            <mat-form-field appearance="fill">
+                <mat-label>Numer telefonu</mat-label>
+                <input matInput formControlName="phoneNumber">
+                <label class="text-danger" *ngIf="VisitSend.get('phoneNumber')?.touched && VisitSend.get('phoneNumber')?.errors?.required">Pole wymagane</label>
+                <label class="text-danger" *ngIf="VisitSend.get('phoneNumber')?.touched && VisitSend.get('phoneNumber')?.errors?.pattern">Podaj poprawny numer telefonu</label>
+            </mat-form-field>
+            <br>
+    
+            <mat-form-field appearance="fill">
+                <mat-label>Lekarz</mat-label>
+                <mat-select matNativeControl formControlName="doctorId" name="doctorId">
+                    <mat-option *ngFor="let doctor of doctors" [value]="doctor.value">
+                        {{doctor.viewValue}}
+                    </mat-option>
+                </mat-select>
+                <label class="text-danger" *ngIf="VisitSend.get('doctorId')?.touched && VisitSend.get('doctorId')?.errors?.required">Pole wymagane</label>
+            </mat-form-field>
+            <br>
+    
+            <mat-form-field appearance="fill">
+                <mat-label> Wybierz date</mat-label>
+                <input matInput [matDatepicker]="picker" formControlName="date">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+                <label class="text-danger" *ngIf="VisitSend.get('date')?.touched && VisitSend.get('date')?.errors?.required">Pole wymagane</label>
+            </mat-form-field>
+            <br>
+    
+    
+            <mat-form-field appearance="fill">
+                <mat-label>Wybierz godzinę</mat-label>
+                <mat-select matNativeControl formControlName="time" name="time">
+                    <mat-option *ngFor="let godzina of godziny" [value]="godzina">
+                        {{godzina}}
+                    </mat-option>
+                </mat-select>
+                <label class="text-danger" *ngIf="VisitSend.get('time')?.touched && VisitSend.get('time')?.errors?.required">Pole wymagane</label>
+            </mat-form-field>
+            <br>
+    
+    
+            <mat-form-field appearance="fill">
+                <mat-label>Przyczyna wizyty</mat-label>
+                <textarea matNativeControl formControlName="reason"></textarea>
+                <label class="text-danger" *ngIf="VisitSend.get('reason')?.touched && VisitSend.get('reason')?.errors?.required">Pole wymagane</label>
+            </mat-form-field>
+            <br>
+            
+    
+            <div class="sub">
+                <button mat-raised-button color="warn" [disabled]="!VisitSend.valid" class="submit"type="submit">Wyślij</button>
+            </div>
+      
+    </form>
+</div>
+
+

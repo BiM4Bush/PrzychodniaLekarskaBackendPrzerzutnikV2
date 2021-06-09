@@ -1,0 +1,32 @@
+.formVisit
+{
+
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    flex-direction: row;
+    align-items: center;
+
+}
+.pop
+{
+  text-align: center;
+}
+.all
+{
+    background: #f3f2f2;
+    border-radius: 3px ;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    position: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 70px;
+    margin-right: 70px;
+    -webkit-box-shadow: 11px -7px 22px -3px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 11px -7px 22px -3px rgba(66, 68, 90, 1);
+    box-shadow: 11px -7px 22px -3px rgba(66, 68, 90, 1);
+    display: flex;
+}

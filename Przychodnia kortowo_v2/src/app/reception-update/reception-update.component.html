@@ -1,0 +1,70 @@
+
+
+<mat-card class = "all">
+    <div class= "pop" *ngIf="alert" >
+        <mat-card>
+                <strong><h2> Udało się!</h2> </strong>  <h3>  Zaktualizowano wizyte!</h3>
+                <button  mat-raised-button color="warn" (click)=" closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    Ok
+                </button>
+        </mat-card>
+        </div>
+        
+<form [formGroup]="Editvisit" (ngSubmit)="collection()">
+
+    <div class="formVisit" fxLayoutGap="10px">
+
+        <h3>Aktualizacja</h3>
+        <mat-form-field appearance="fill">
+            <mat-label>Imię</mat-label>
+            <input matInput formControlName="name">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Nazwisko</mat-label>
+            <input matInput formControlName="surname">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Numer telefonu</mat-label>
+            <input matInput formControlName="phoneNumber">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label> Data wizyty</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="date">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Godzina wizyty</mat-label>
+            <input matInput formControlName="time">
+        </mat-form-field>
+
+        
+        <mat-form-field appearance="fill">
+            <mat-label>Lekarz</mat-label>
+            <mat-select matNativeControl formControlName="doctorId" name="doctorId">
+                <mat-option *ngFor="let doctor of doctors" [value]="doctor.value">
+                    {{doctor.viewValue}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Potwierdzenie wizyty</mat-label>
+            <mat-select matNativeControl formControlName="confirmed" name="confirmed">
+                <mat-option *ngFor="let confm of Confirm" [value]="confm.value">
+                    {{confm.viewValue}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <div class="sub" fxLayoutGap="10px">
+            <button mat-raised-button color="accent" type="submit">Wyślij</button>
+            <button mat-raised-button color="accent" (click)="back()">cofnij</button>
+        </div>
+    </div>
+</form>
+
+</mat-card>

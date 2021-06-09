@@ -1,0 +1,46 @@
+<p>
+  <mat-toolbar color="primary">
+    <span>Przychodnia Kortowo</span>
+    <div class= "menu_przyciski" fxLayoutGap="20px">
+      <button mat-raised-button color="warn"  roututerLink="/home">Profil</button>
+      <button mat-raised-button color="warn" routerLink="/wizyta">Formularz Wizyty Lekarskiej</button>
+      <button mat-raised-button color="warn" routerLink="/doctorinfo">Kontakt</button>
+      <button mat-raised-button color="accent" (click)="onLogout()">Wyloguj</button>
+
+    </div>
+  </mat-toolbar>
+</p>
+<mat-card class="example-card">
+  <div *ngIf="data==0">
+    <button  mat-raised-button color="warn" routerLink="/addinfo">Dodaj Informacje</button></div>
+  <br>
+  <mat-card class="test-card">
+    
+    <mat-card-header  *ngFor="let item of data">
+      <div mat-card-avatar class="test-header-image"></div>
+
+      <mat-list>
+      <div fxLayoutGap="20px">
+        <button mat-raised-button color="warn" routerLink="/patient-update/{{item.id}}">Aktualizuj Dane</button>
+      </div>
+        <mat-list-item><p class="pogrubione">Imię: </p> <p class="odstep">  {{item.name}}</p></mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item><p class="pogrubione">Nazwisko: </p> <p class="odstep">{{item.surname}}</p></mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item><p class="pogrubione">Płeć:</p> <p class="odstep">{{item.gender}}</p></mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item><p class="pogrubione">Data Urodzenia:</p> <p class="odstep">{{item.birthdayDate|date:'dd:MM:YYYY'}}</p></mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item><p class="pogrubione">Numer Telefonu:</p> <p class="odstep">+48 {{item.telNumber}}</p></mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item><p class="pogrubione">Adres Zamieszkania:</p> <p class="odstep">{{item.adress}}</p></mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item><p class="pogrubione">PESEL:</p> <p class="odstep">{{item.pesel}}</p></mat-list-item>
+      </mat-list>
+    </mat-card-header>
+  </mat-card>
+</mat-card>
+
+
+
+  <!-- box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); -->

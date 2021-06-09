@@ -1,0 +1,92 @@
+<div class = "fix">
+
+
+        <mat-card  fxLayoutGap="45px">
+          <h2>Panel Lekarza</h2>
+          <mat-form-field appearance="fill">
+            <mat-label>Wybierz potwierdzenie wizyty</mat-label>
+            <mat-select matNativeControl [formControl]="confirmFilter" placeholder="Potwierdzone">
+                <mat-option *ngFor="let confm of Confirm" [value]="confm.value">
+                    {{confm.viewValue}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+
+
+          <mat-form-field appearance="fill">
+            <mat-label> Wybierz date</mat-label>
+            <input matInput [matDatepicker]="picker" [formControl]="datefilter" >
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+
+
+          <mat-form-field appearance="fill">
+            <mat-label>Wybierz lekarza</mat-label>
+            <mat-select matNativeControl [formControl]="doktorfilter" name ="doktorfilter" >
+              <mat-option *ngFor="let doctor of doctors" [value]="doctor.value">
+                {{doctor.viewValue}}
+            </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          </mat-card>
+
+</div>
+          
+          
+    <table mat-table matTableFilter [dataSource]="dataSource"matSort class="mat-elevation-z8" matSort matSortActive="time" matSortDirection="asc">
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef > Imię </th>
+          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+        <ng-container matColumnDef="surname">
+          <th mat-header-cell *matHeaderCellDef > Nazwisko </th>
+          <td mat-cell *matCellDef="let element"> {{element.surname}} </td>
+        </ng-container>
+        <ng-container matColumnDef="phoneNumber">
+          <th mat-header-cell *matHeaderCellDef > Numer telefonu </th>
+          <td mat-cell *matCellDef="let element"> {{element.phoneNumber}} </td>
+        </ng-container>
+        <ng-container matColumnDef="date">
+          <th mat-header-cell *matHeaderCellDef > Data wizyty </th>
+          <td mat-cell *matCellDef="let element"> {{element.date | date:'dd.MM.y'}} </td>
+        </ng-container>
+        <ng-container matColumnDef="time">
+          <th mat-header-cell *matHeaderCellDef > Godzina </th>
+          <td mat-cell *matCellDef="let element"> {{element.time}} </td>
+        </ng-container>
+        <ng-container matColumnDef="reason">
+          <th mat-header-cell *matHeaderCellDef > Przyczyna wizyty</th>
+          <td mat-cell *matCellDef="let element"> {{element.reason}} </td>
+        </ng-container>
+        <ng-container matColumnDef="doctorId">
+          <th mat-header-cell *matHeaderCellDef > Lekarz </th>
+          <td mat-cell *matCellDef="let element"> {{element.doctorId | replace}} </td>
+      </ng-container>
+      <ng-container matColumnDef="confirmed" >
+
+        <th mat-header-cell *matHeaderCellDef > Potwierdzone</th>
+        <td  mat-cell *matCellDef="let element " > {{element.confirmed && 'Potwierdzone' || 'Niepotwierdzone' }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="doctorRecommendation">
+      <th mat-header-cell *matHeaderCellDef > Zalecenia</th>
+      <td mat-cell *matCellDef="let element"> {{element.doctorRecommendation}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="update">
+      <th mat-header-cell *matHeaderCellDef> Zalecenia/Recepta </th>
+      <td mat-cell *matCellDef="let element">
+          <button mat-icon-button color="accent" (click)="updateVisit(element.id)">
+              <mat-icon>edit</mat-icon>
+          </button>
+      </td>
+  </ng-container>
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+      <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>

@@ -1,0 +1,24 @@
+.formVisit
+{
+
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+	
+}
+.pop
+{
+  text-align: center;
+}
+.all
+{
+    min-width: 400px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 70px;
+    margin-right: 70px;
+    display: flex;
+}

@@ -1,0 +1,59 @@
+<form [formGroup]="PatientSend" (ngSubmit)="callAPI()">
+    <mat-card class="odstep">
+        <div class="formVisit" fxLayoutGap="10px">
+            <div class="napis">
+                <h3>Dodaj Swoje Dane  </h3>
+            </div>
+            <mat-form-field appearance="fill">
+                <mat-label>Imię</mat-label>
+                <input matInput formControlName="name">
+                <label class="text-danger" *ngIf="PatientSend.get('name')?.touched && PatientSend.get('name')?.errors?.required">Pole wymagane</label>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Nazwisko</mat-label>
+                <input matInput formControlName="surname">
+                <label class="text-danger" *ngIf="PatientSend.get('surname')?.touched && PatientSend.get('surname')?.errors?.required">Pole wymagane</label>
+
+              </mat-form-field>
+              <mat-form-field appearance="fill">
+                <mat-label>Płeć</mat-label>
+                <input matInput formControlName="gender">
+                <label class="text-danger" *ngIf="PatientSend.get('gender')?.touched && PatientSend.get('gender')?.errors?.required">Płeć</label>
+
+              </mat-form-field>
+
+
+            <mat-form-field appearance="fill">
+                <mat-label>Numer telefonu</mat-label>
+                <input matInput formControlName="telNumber">
+                <label class="text-danger" *ngIf="PatientSend.get('telNumber')?.touched && PatientSend.get('telNumber')?.errors?.required">Pole wymagane</label>
+                <label class="text-danger" *ngIf="PatientSend.get('telNumber')?.touched && PatientSend.get('telNumber')?.errors?.pattern">Podaj poprawny numer telefonu</label>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+              <mat-label> Podaj Datę Urodznia</mat-label>
+              <input matInput [matDatepicker]="picker" formControlName="birthdayDate">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+              <label class="text-danger" *ngIf="PatientSend.get('birthdayDate')?.touched && PatientSend.get('birthdayDate')?.errors?.required">Pole wymagane</label>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Podaj Adres Zamieszkania</mat-label>
+            <input matInput formControlName="adress">
+            <label class="text-danger" *ngIf="PatientSend.get('adress')?.touched && PatientSend.get('adress')?.errors?.required">Pole wymagane</label>
+
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Podaj Swój PESEL</mat-label>
+            <input matInput formControlName="pesel">
+            <label class="text-danger" *ngIf="PatientSend.get('pesel')?.touched && PatientSend.get('pesel')?.errors?.required">Pole wymagane</label>
+
+          </mat-form-field>
+            <div class="submit" fxLayoutGap="15px">
+                <button mat-raised-button color="warn" type="submit">Dodaj</button>
+            </div>
+        </div>
+    </mat-card>
+</form>
+

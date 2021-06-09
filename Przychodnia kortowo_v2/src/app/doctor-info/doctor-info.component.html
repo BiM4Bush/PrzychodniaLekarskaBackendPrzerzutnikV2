@@ -1,0 +1,141 @@
+<p>
+    <mat-toolbar color="primary">
+        <span>Przychodnia Kortowo</span>
+        <div class="menu_przyciski" fxLayoutGap="20px">
+            <button mat-raised-button color="warn" routerLink="/home">Profil</button>
+            <button mat-raised-button color="accent" (click)="onLogout()">Wyloguj</button>
+        </div>
+    </mat-toolbar>
+</p>
+
+
+
+<mat-tab-group class="nawigacja">
+
+    <mat-tab label="Pulmonolog">
+        <mat-card class="pulmonolog">
+            <mat-card-header>
+
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title *ngFor="let item of data | filter:'Pulmonolog':'medicalSpecialization'"> {{'Dr.
+                    '+item.name + ' ' + item.surname}} <br>Tel: {{item.phoneNumber}}</mat-card-title>
+                <mat-card-subtitle *ngFor="let item of data | filter:'Pulmonolog':'medicalSpecialization'">
+                    {{item.medicalSpecialization}}</mat-card-subtitle>
+
+                    <img mat-card-image class="doctor-card"
+                    src="https://image.freepik.com/free-photo/doctor-smiling-with-stethoscope_1154-36.jpg">
+            </mat-card-header>
+        </mat-card>
+
+        
+    <mat-card class = "page">
+        <p>
+            Lekarz pulmonolog zajmuje się układem oddechowym. Do jego zadań należy nie tylko leczenie,
+            lecz także diagnostyka i profilaktyka schorzeń narządów wchodzących w skład układu oddechowego.
+        </p>
+    </mat-card>
+
+
+            <mat-tab label="Gastrolog">
+
+                    <mat-card class="pulmonolog">
+                        <mat-card-header>
+                            <div mat-card-avatar class="example-header-image"></div>
+                            <mat-card-title *ngFor="let item of data | filter:'Gastrolog':'medicalSpecialization'">
+                                {{'Dr. '+item.name + ' ' + item.surname}} <br>Tel: {{item.phoneNumber}}</mat-card-title>
+                            <mat-card-subtitle *ngFor="let item of data | filter:'Gastrolog':'medicalSpecialization'">
+                                {{item.medicalSpecialization}}</mat-card-subtitle>
+
+                                <img mat-card-image class="doctor-card"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFw10BpfBGPUWMtSnoXhAPhua5j1F7zbZu_w&usqp=CAU">
+                        </mat-card-header>
+                    </mat-card>
+
+                    <mat-card class = "page">
+                        <p>
+                            Gastrolog, znany inaczej jako gastroenterolog, to lekarz, który zajmuje się układem
+                            pokarmowym i chorobami z nim związanymi. Są to choroby żołądka,
+                            jelit, przełyku, wątroby, dróg żółciowych i trzustki.
+                        </p>
+                    </mat-card>
+
+                    <mat-tab label="Okulista">
+
+                        <mat-card class="pulmonolog">
+
+                                    <mat-card-header>
+                                        <div mat-card-avatar class="example-header-image"></div>
+                                        <mat-card-title
+                                            *ngFor="let item of data | filter:'Okulista':'medicalSpecialization'">
+                                            {{'Dr. '+item.name + ' ' + item.surname}} <br>Tel: {{item.phoneNumber}}
+                                        </mat-card-title>
+                                        <mat-card-subtitle
+                                            *ngFor="let item of data | filter:'Okulista':'medicalSpecialization'">
+                                            {{item.medicalSpecialization}} </mat-card-subtitle>
+                                            <img mat-card-image class="doctor-card"
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1hrB-TFO-G4bkeN2wp3F0CQrzAFjZxG5lFA&usqp=CAU">
+                                    </mat-card-header>
+
+                                    <mat-card class = "page">
+                                        <p>
+                                            Okulista jest osobą odpowiedzialną za diagnozowanie oraz leczenie chorób
+                                            związanych z oczami. Może również dobrać korekcję okularową oraz dopasować
+                                            soczewki kontaktowe. Okulista jest przeważnie osobą pierwszego kontaktu,
+                                            kiedy ze wzrokiem lub oczami zaczyna dziać się coś poważnego.
+                                        </p>
+                                    </mat-card>
+                        </mat-card>
+                    </mat-tab>
+
+
+
+                    <mat-tab label="Internista">
+
+
+
+                                <mat-card class="pulmonolog">
+                                    <mat-card-header>
+                                        <div mat-card-avatar class="example-header-image"></div>
+                                        <mat-card-title *ngFor="let item of data | filter:'Leszek':'name'"> {{'Dr.
+                                            '+item.name + ' ' + item.surname}}<br>Tel: {{item.phoneNumber}}
+                                        </mat-card-title>
+                                        <mat-card-subtitle>Internista</mat-card-subtitle>
+                                        <img mat-card-image class="doctor-card"
+                                        src="data:image/jpeg;base64,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">
+                                   
+                                    </mat-card-header>
+                                        <mat-card class = "page">
+                                        <p>
+                                            Internista to lekarz zajmujący się profilaktyką, diagnozowaniem i leczeniem
+                                            chorób narządów wewnętrznych. Ponieważ często jest pierwszym lekarzem, do
+                                            którego udają się pacjenci w przypadku dolegliwości zdrowotnych i
+                                            niepokojących objawów, nazywany
+                                            jest lekarzem pierwszego kontaktu. Stanowi fundament opieki medycznej.
+                                        </p>
+                                    </mat-card>
+
+
+                                </mat-card>
+                                <mat-card class="pulmonolog">
+                                    <mat-card-header>
+                                        <div mat-card-avatar class="doctor-header-image-famale"></div>
+                                        <mat-card-title *ngFor="let item of data | filter:'Aneta':'name'"> {{'Dr.
+                                            '+item.name + ' ' + item.surname}}<br>Tel: {{item.phoneNumber}}
+                                        </mat-card-title>
+                                        <mat-card-subtitle>Internista</mat-card-subtitle>
+                                        <img mat-card-image class="doctor-card"
+                                        src="data:image/jpeg;base64,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">
+                                    </mat-card-header>
+                                    
+                                    <mat-card class = "page">
+                                        <p>
+                                            Internista to lekarz zajmujący się profilaktyką, diagnozowaniem i leczeniem
+                                            chorób narządów wewnętrznych. Ponieważ często jest pierwszym lekarzem, do
+                                            którego udają się pacjenci w przypadku dolegliwości zdrowotnych i
+                                            niepokojących objawów, nazywany
+                                            jest lekarzem pierwszego kontaktu. Stanowi fundament opieki medycznej.
+                                        </p>
+                                    </mat-card>
+                                </mat-card>
+
+                    </mat-tab>

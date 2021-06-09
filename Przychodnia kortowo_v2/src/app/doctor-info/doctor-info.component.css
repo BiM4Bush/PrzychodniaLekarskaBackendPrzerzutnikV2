@@ -1,0 +1,58 @@
+
+.page{
+    float: right;
+    margin-left: 600px;
+    margin-right: 400px;
+    margin-top: -300px;
+}
+.pulmonolog
+{
+    width: 100%;
+}
+  .doctor-card{
+    max-width: 300px;
+    padding: 50px;
+  }
+  .doctor-header-image-famale{
+    background-image: url('https://www.svgrepo.com/show/31299/doctor.svg');
+    background-size: cover;
+  }
+  
+  .example-header-image {
+    background-image: url('https://www.svgrepo.com/show/8461/doctor.svg');
+    background-size: cover;
+  }
+  .nawigacja
+  {
+      background: #f3f2f2;
+      border-radius: 3px ;
+      font-size: 0.9em;
+      font-family: sans-serif;
+      min-width: 400px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      position: center;
+      margin-top: 50px;
+      margin-bottom: 100px;
+      margin-left: 70px;
+      margin-right: 70px;
+      -webkit-box-shadow: 11px -7px 22px -3px rgba(66, 68, 90, 1);
+      -moz-box-shadow: 11px -7px 22px -3px rgba(66, 68, 90, 1);
+      box-shadow: 11px -7px 22px -3px rgba(66, 68, 90, 1);
+      display: flex;
+  }
+  
+  .mat-grid-tile-custom {
+    padding: 20px;
+  }
+  
+  .custom-mat-list { /* this is bad! */
+    padding-top: 50%!important;
+  }
+  .test1{
+  
+  
+    margin-bottom: 80px;
+  border: 0.5px solid rgba(167, 166, 166, 0.932);
+  }
+  
+  
